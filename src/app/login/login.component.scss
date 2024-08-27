@@ -14,36 +14,11 @@
   padding: 10em;
   text-align: center;
 
-  p{
+  p {
     font-size: 2em;
     color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    animation: zoomIn 5s ease-in-out;
-
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-
-  @keyframes zoomIn{
-   0%{
-    transform: scale(0.5);
-    opacity: .7;
-   }
-
-   25%{
-    transform: scale(0.6);
-    opacity: .8;
-   }
-
-   50%{
-    transform: scale(0.7);
-    opacity: 9;
-   }
-
-   100%{
-    transform: scale(1);
-    opacity: 1;
-   }
-  }
-
 
   h2 {
     text-align: center;
@@ -53,7 +28,6 @@
 
   label {
     font-size: 1.5rem;
-
   }
 
   input[type="text"],
@@ -66,17 +40,17 @@
     padding: 1em;
   }
 
-  button{
+  button {
     border-radius: 5rem;
     padding: 1em 2em;
-    font-size: .8em;
-    letter-spacing: .1em;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
     font-weight: 600;
-    font-family: 'Courier New', Courier, monospace;
-    border: .1em solid #fff;
-    opacity: .7;
+    font-family: "Courier New", Courier, monospace;
+    border: 0.1em solid #fff;
+    opacity: 0.7;
 
-    &:hover{
+    &:hover {
       opacity: 1;
       cursor: pointer;
       border: none;
@@ -86,15 +60,14 @@
   }
 }
 
-@media(max-width: 800px){
-  h2{
+@media (max-width: 800px) {
+  h2 {
     font-size: 2em;
     text-align: center;
   }
 
   input[type="text"],
-  input[type="email"]{
+  input[type="email"] {
     padding: 2em;
   }
-
 }
