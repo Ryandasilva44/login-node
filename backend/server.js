@@ -1,10 +1,15 @@
 const express = require("express");
 // const bodyParser = require("body-parser");
 const cors = require("cors");
+const corsOptions = {
+  origin: 'http://localhost:4200', // ou o domínio do seu frontend
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+}
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 const users = [
   { name: "John Doe", email: "john@exemplo.com" },
