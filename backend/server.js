@@ -1,6 +1,6 @@
 const express = require("express");
-// const bodyParser = require("body-parser");
 const cors = require("cors");
+
 const corsOptions = {
   origin: ['http://localhost:4200', 'https://login-node-delta.vercel.app'], // ou o domínio do seu frontend
   methods: ['GET', 'POST'],
@@ -20,7 +20,7 @@ app.post("/api/login", (req, res) => {
   const { name, email } = req.body;
   const user = users.find((u) => u.name === name && u.email === email);
   if (user) {
-    res.status(200).json({ message: "Login sucessful", user });
+    res.status(200).json({ message: "Login successful", user });
   } else {
     res.status(401).json({ message: "Invalid credentials" });
   }
