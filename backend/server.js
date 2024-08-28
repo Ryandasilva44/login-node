@@ -2,7 +2,7 @@ const express = require("express");
 // const bodyParser = require("body-parser");
 const cors = require("cors");
 const corsOptions = {
-  origin: 'http://localhost:4200', // ou o domínio do seu frontend
+  origin: ['http://localhost:4200', 'https://login-node-delta.vercel.app'], // ou o domínio do seu frontend
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 }
